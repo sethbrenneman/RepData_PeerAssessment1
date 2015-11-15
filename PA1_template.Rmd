@@ -28,6 +28,8 @@ pattern[match(max(pattern), pattern)]
 ```
 
 ## Imputing missing values
+NAs are replaced with the average number of steps for that time interval over the week
+
 ```{r}
 numberOfNAs <- sum(is.na(data$steps))
 numberOfNAs
